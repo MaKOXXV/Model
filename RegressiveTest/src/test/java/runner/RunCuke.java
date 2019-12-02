@@ -39,7 +39,7 @@ public class RunCuke{
 
         // User can add the system information as follows
         ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
-        ExtentCucumberFormatter.addSystemInfo("Browser version", "v31.0");
+        ExtentCucumberFormatter.addSystemInfo("Browser version", "v76.0");
         ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.0");
 
         // Also you can add system information using a hash map

@@ -1,8 +1,13 @@
 package pacot;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class Modulo {
 	
@@ -10,17 +15,29 @@ public class Modulo {
 	WebDriver driver;
 	
 	
-	public void iniciacao(){
-		
-		String url = "www.google.com.br";
-		System.out.println("*******************");
-		System.out.println("launching IE browser");
-		System.setProperty("webdriver.ie.driver", driverPath+"IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
+	public  WebDriver iniciacao(){		
+		System.out.println("|---------> Instanciando Driver : ChromeDriver <------------|");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(url);
 		
+		return driver;
 	}
-
+	
+	public void highLight(WebElement element, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		// Objeto que permite alteração de cor entre labels na estrutura selecionada
+		js.executeScript("arguments[0].setAttribute('style', 'background: blue; border: 2px solid green;');", element);
+	}
+	
+	public void waitingElemnt(WebDriver driver, String findex) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(presenceOfElementLocated(By.xpath(findex)));
+			
+		}catch (NullPointerException ex){
+			System.out.println("FALHA AO BUSCA ELEMENTO");
+		}
+	}
 }

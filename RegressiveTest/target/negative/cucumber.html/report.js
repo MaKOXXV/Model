@@ -132,7 +132,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 138500,
+  "duration": 4555600,
   "status": "passed"
 });
 formatter.background({
@@ -161,7 +161,7 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 10612669600,
+  "duration": 16636660700,
   "status": "passed"
 });
 formatter.match({
@@ -174,14 +174,14 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 3877135300,
+  "duration": 885385500,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
-  "duration": 58232400,
+  "duration": 617591899,
   "status": "passed"
 });
 formatter.scenario({
@@ -235,14 +235,14 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "duration": 97911100,
+  "duration": 171704400,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "duration": 1149068100,
+  "duration": 361967000,
   "status": "passed"
 });
 formatter.match({
@@ -259,14 +259,14 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "duration": 2552654200,
+  "duration": 977788300,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "duration": 3108337300,
+  "duration": 127251600,
   "status": "passed"
 });
 formatter.match({
@@ -283,15 +283,15 @@ formatter.match({
   "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
 });
 formatter.result({
-  "duration": 1346124600,
+  "duration": 1987533799,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23500,
+  "duration": 85900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 50200,
+  "duration": 220600,
   "status": "passed"
 });
 formatter.background({
@@ -320,7 +320,7 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 9485774700,
+  "duration": 14699008200,
   "status": "passed"
 });
 formatter.match({
@@ -333,14 +333,14 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 3766013600,
+  "duration": 754904900,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
-  "duration": 44613700,
+  "duration": 527524601,
   "status": "passed"
 });
 formatter.scenario({
@@ -394,14 +394,14 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "duration": 91691100,
+  "duration": 221833700,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "duration": 1160364500,
+  "duration": 366354300,
   "status": "passed"
 });
 formatter.match({
@@ -418,14 +418,14 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "duration": 2514842100,
+  "duration": 841535100,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "duration": 3075419900,
+  "duration": 191370599,
   "status": "passed"
 });
 formatter.match({
@@ -442,15 +442,15 @@ formatter.match({
   "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
 });
 formatter.result({
-  "duration": 1204297600,
+  "duration": 1553021700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27800,
+  "duration": 24300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 56900,
+  "duration": 60200,
   "status": "passed"
 });
 formatter.background({
@@ -479,7 +479,7 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 9505986600,
+  "duration": 14688078900,
   "status": "passed"
 });
 formatter.match({
@@ -492,14 +492,14 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 3691345600,
+  "duration": 774261900,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
-  "duration": 49154900,
+  "duration": 590573700,
   "status": "passed"
 });
 formatter.scenario({
@@ -553,14 +553,14 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "duration": 98966100,
+  "duration": 145958500,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "duration": 1165451300,
+  "duration": 328660301,
   "status": "passed"
 });
 formatter.match({
@@ -577,14 +577,14 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "duration": 2469911800,
+  "duration": 745999800,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "duration": 3075059400,
+  "duration": 131177199,
   "status": "passed"
 });
 formatter.match({
@@ -601,15 +601,15 @@ formatter.match({
   "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
 });
 formatter.result({
-  "duration": 1187519700,
+  "duration": 1525694100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18000,
+  "duration": 17000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 86800,
+  "duration": 101100,
   "status": "passed"
 });
 formatter.background({
@@ -638,7 +638,7 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 9504465500,
+  "duration": 14721104801,
   "status": "passed"
 });
 formatter.match({
@@ -651,9 +651,111 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 3801089300,
+  "duration": 761695401,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
+});
+formatter.result({
+  "duration": 573560001,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 21,
+  "name": "validar idade \"CPF menor\"",
+  "description": "",
+  "id": "validação-de-idade-do-usuario;validar-idade-\"\u003cstatus\u003e\";;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@history11"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "clicar em pessoa",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "clicar em pessoa/validarIdade",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "inserir dados com a data \"\" e \"16755397075\"",
+  "matchedColumns": [
+    1,
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "clicar em Try it out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "\"Titular / Subscritor maior que 16 anos.\" para quem nasceu em \"2001\"",
+  "matchedColumns": [
+    3,
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ValidadacaoIdade.clicar_em_pessoa()"
+});
+formatter.result({
+  "duration": 138510800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
+});
+formatter.result({
+  "duration": 367432100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 26
+    },
+    {
+      "val": "16755397075",
+      "offset": 31
+    }
+  ],
+  "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
+});
+formatter.result({
+  "duration": 1061397900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
+});
+formatter.result({
+  "duration": 130567300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Titular / Subscritor maior que 16 anos.",
+      "offset": 1
+    },
+    {
+      "val": "2001",
+      "offset": 63
+    }
+  ],
+  "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
 });
