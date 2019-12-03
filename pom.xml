@@ -19,8 +19,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${compiler.version}</version>
 				<configuration>
-					<source>3.6.3</source>
-					<target>3.6.3</target>
+					<source>3.5</source>
+					<target>3.5</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
