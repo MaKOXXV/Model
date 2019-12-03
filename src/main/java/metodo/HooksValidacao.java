@@ -12,7 +12,7 @@ public class HooksValidacao {
 	Modulo modulo = new Modulo(); 
 	
 	public void host(String url, WebDriver driver) throws InterruptedException {				
-		System.out.println("Acessando URT : " + url);
+		System.out.println("Acessando URL : " + url);
 		driver.get(url);
 		
 	}
