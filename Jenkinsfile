@@ -1,5 +1,5 @@
 node{
-	satge('SCM Checkout'){
+	stage('SCM Checkout'){
 		git 'https://github.com/MaKOXXV/Model.git'
 	}
 	stage('Compile-Package'){
