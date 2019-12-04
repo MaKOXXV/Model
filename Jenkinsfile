@@ -2,7 +2,7 @@ pipeline{
     agent any
 	
     tools { 
-        maven 'Maven 3.6.3' 
+        maven 'Maven 3_6_3' 
         bat label: '', script: 'export JAVA_HOME = C:\\Program Files\\Java\\jdk1.8.0_221'
     }
 	
