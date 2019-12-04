@@ -2,12 +2,12 @@ pipeline{
     agent any
 	
     stages {
-	tools{
-		jdk 'Java8'
-				
-			}
 	
 	stage ('Compile Stage') {
+		tools{
+			jdk 'Java8'
+				
+		}
 	    	steps{
 
 	    		withMaven(maven : 'maven_3_6_3'){
@@ -18,6 +18,11 @@ pipeline{
 	    }
     
 	    stage ('testing Stage') {
+		    
+		tools{
+			jdk 'Java8'
+				
+		}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
 	    			bat 'mvn test'
@@ -26,6 +31,10 @@ pipeline{
 	    }
 	    
 	    stage ('Deployment Stage') {
+		tools{
+			jdk 'Java8'
+				
+		}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
 	    			bat 'mvn deploy'
