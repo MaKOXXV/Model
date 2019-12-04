@@ -25,7 +25,7 @@ pipeline{
 		}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
-	    			bat 'mvn test'
+	    			bat 'mvn test -s settings.xml'
 	    		}
 	    	}
 	    }
@@ -37,7 +37,7 @@ pipeline{
 		}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
-	    			bat 'mvn deploy'
+	    			bat 'mvn deploy -s settings.xml'
 	    		}
 	    	}
 	    }
