@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features={"src/test/resources/features"},
 	glue={"steps"},	
 	monochrome=true,
-	//tags={"@history11"},
+	tags={"@history11"},
 	plugin = {"json:target/negative/cucumber.json", "pretty", "html:target/negative/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"})
 public class RunCuke{
 
