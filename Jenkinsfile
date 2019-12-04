@@ -3,7 +3,7 @@ pipeline{
 	
     tools { 
         maven 'Maven 3_6_3' 
-        bat label: '', script: 'export JAVA_HOME = C:\\Program Files\\Java\\jdk1.8.0_221'
+        jdk    '1.8.0_221'
     }
 	
     stages {
