@@ -1,10 +1,9 @@
-#!groovy
 pipeline{
     agent any
 	
     tools { 
         maven 'Maven 3.3.9' 
-        jdk 'jdk8' 
+        jdk '1.8.0_221' 
     }
 	
     stages {
