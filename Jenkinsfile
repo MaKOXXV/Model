@@ -4,7 +4,7 @@ pipeline{
     stages {
 		stage ('Compile Stage') {
 		tools{
-			jdk 'Java'
+			jdk 'Java8'
 			}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
