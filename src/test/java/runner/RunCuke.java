@@ -37,7 +37,7 @@ public class RunCuke{
 	        ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.1");
 		***/
 		
-        // Iniciação
+        // Iniciacao
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_hhmmss");
 		Date curDate = new Date(0);
@@ -50,12 +50,12 @@ public class RunCuke{
         //Extend em XML
         ExtentCucumberFormatter.loadConfig(new File("src/test/resources/extent-config.xml"));
 
-        //Informações de instanciamento
+        //Informacoes de instanciamento
         ExtentCucumberFormatter.addSystemInfo("Browser Name", "GoogleChrome");
         ExtentCucumberFormatter.addSystemInfo("Browser version", "v76.0");
         ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.0");
 
-        // Informações por HasMap
+        // Informacoes por HasMap
         Map systemInfo = new HashMap();
         systemInfo.put("Cucumber version", "v1.2.3");
         systemInfo.put("Extent Cucumber Reporter version", "v1.1.0");
