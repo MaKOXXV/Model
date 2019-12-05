@@ -30,16 +30,18 @@ pipeline{
 	    	}
 	    }
 	    
-	    stage ('Deployment Stage') {
+	    stage ('Cucumber Reports') {
+	    
 		tools{
 			jdk 'Java8'
 				
 		}
-	    	steps{
-	    		withMaven(maven : 'maven_3_6_3'){
-	    			bat 'mvn deploy -s settings.xml'
-	    		}
-	    	}
+	    	 steps {
+                cucumber buildStatus: "UNSTABLE",
+                    fileIncludePattern: "target/negative/cucumber.json",
+                    jsonReportDirectory: 'target'
+
+            }
 	    }
     	
     }

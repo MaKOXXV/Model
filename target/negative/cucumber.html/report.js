@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2309600,
+  "duration": 4051001,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,32 +48,32 @@ formatter.match({
   "location": "loginWebMapfre.esteja_na_tela_web()"
 });
 formatter.result({
-  "duration": 127302600,
+  "duration": 190785799,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.senha()"
 });
 formatter.result({
-  "duration": 33500,
+  "duration": 47501,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.user()"
 });
 formatter.result({
-  "duration": 31200,
+  "duration": 39400,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.login()"
 });
 formatter.result({
-  "duration": 31000,
+  "duration": 44800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27300,
+  "duration": 26199,
   "status": "passed"
 });
 formatter.uri("validacaoIdade.feature");
@@ -210,7 +210,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 83100,
+  "duration": 106401,
   "status": "passed"
 });
 formatter.background({
@@ -239,7 +239,7 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 15689305700,
+  "duration": 16546047400,
   "status": "passed"
 });
 formatter.match({
@@ -252,14 +252,14 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 3136848300,
+  "duration": 1566690800,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
-  "duration": 182167300,
+  "duration": 558937100,
   "status": "passed"
 });
 formatter.scenario({
@@ -313,14 +313,14 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "duration": 907336400,
+  "duration": 147834700,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "duration": 418048500,
+  "duration": 376409000,
   "status": "passed"
 });
 formatter.match({
@@ -337,14 +337,14 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "duration": 657251700,
+  "duration": 957967400,
   "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "duration": 105182000,
+  "duration": 137061000,
   "status": "passed"
 });
 formatter.match({

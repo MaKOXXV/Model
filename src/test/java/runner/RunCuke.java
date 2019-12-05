@@ -1,5 +1,9 @@
 package runner;
 import java.io.File;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -21,6 +25,7 @@ public class RunCuke{
 	@BeforeClass
 	 public static void setup() {
 		
+		/***
 		  ExtentCucumberFormatter.initiateExtentCucumberFormatter();
 
 	        // Loads the extent config xml to customize on the report.
@@ -30,31 +35,31 @@ public class RunCuke{
 	        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
 	        ExtentCucumberFormatter.addSystemInfo("Browser version", "v47.0.1");
 	        ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.1");
-
-		/***
-        // Initiates the extent report and generates the output in the output/Run_<unique timestamp>/report.html file by default.
+		***/
+		
+        // Iniciação
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_hhmmss");
-		Date curDate = new Date();
+		Date curDate = new Date(0);
 		String strDate = sdf.format(curDate);
 		String fileName = "E:\\Extent_Reports\\report" + strDate+".html";
 		File newFile = new File(fileName);
         //ExtentCucumberFormatter.initiateExtentCucumberFormatter(newFile,false);
 
-		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("ExtenReports/extentreports.html"),false);
-        // Loads the extent config xml to customize on the report.
+		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("ExtenReports/extentreports"+ strDate +".html"),false);
+        //Extend em XML
         ExtentCucumberFormatter.loadConfig(new File("src/test/resources/extent-config.xml"));
 
-        // User can add the system information as follows
-        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
+        //Informações de instanciamento
+        ExtentCucumberFormatter.addSystemInfo("Browser Name", "GoogleChrome");
         ExtentCucumberFormatter.addSystemInfo("Browser version", "v76.0");
         ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.0");
 
-        // Also you can add system information using a hash map
+        // Informações por HasMap
         Map systemInfo = new HashMap();
         systemInfo.put("Cucumber version", "v1.2.3");
         systemInfo.put("Extent Cucumber Reporter version", "v1.1.0");
-        ExtentCucumberFormatter.addSystemInfo(systemInfo);***/
+        ExtentCucumberFormatter.addSystemInfo(systemInfo);
     }
 }
 
