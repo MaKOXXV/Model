@@ -25,7 +25,7 @@ public class RunCuke{
 	@BeforeClass
 	 public static void setup() {
 		
-		/***
+		
 		  ExtentCucumberFormatter.initiateExtentCucumberFormatter();
 
 	        // Loads the extent config xml to customize on the report.
@@ -35,8 +35,8 @@ public class RunCuke{
 	        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
 	        ExtentCucumberFormatter.addSystemInfo("Browser version", "v47.0.1");
 	        ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.1");
-		***/
 		
+	/***	
         // Iniciacao
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_hhmmss");
@@ -59,7 +59,7 @@ public class RunCuke{
         Map systemInfo = new HashMap();
         systemInfo.put("Cucumber version", "v1.2.3");
         systemInfo.put("Extent Cucumber Reporter version", "v1.1.0");
-        ExtentCucumberFormatter.addSystemInfo(systemInfo);
+        ExtentCucumberFormatter.addSystemInfo(systemInfo);***/
     }
 }
 
