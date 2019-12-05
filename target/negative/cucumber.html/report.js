@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4051001,
+  "duration": 3946600,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,32 +48,32 @@ formatter.match({
   "location": "loginWebMapfre.esteja_na_tela_web()"
 });
 formatter.result({
-  "duration": 190785799,
+  "duration": 108686200,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.senha()"
 });
 formatter.result({
-  "duration": 47501,
+  "duration": 26500,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.user()"
 });
 formatter.result({
-  "duration": 39400,
+  "duration": 27600,
   "status": "passed"
 });
 formatter.match({
   "location": "loginWebMapfre.login()"
 });
 formatter.result({
-  "duration": 44800,
+  "duration": 40300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26199,
+  "duration": 28200,
   "status": "passed"
 });
 formatter.uri("validacaoIdade.feature");
@@ -210,7 +210,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 106401,
+  "duration": 117000,
   "status": "passed"
 });
 formatter.background({
@@ -239,8 +239,9 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
-  "duration": 16546047400,
-  "status": "passed"
+  "duration": 28178663900,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d78.0.3904.108)\n  (Driver info: chromedriver\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 21.18 seconds\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027mlemos10\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat pacot.Modulo.iniciacao(Modulo.java:21)\r\n\tat steps.ValidadacaoIdade.esteja_na_tela_tela_Swagger(ValidadacaoIdade.java:32)\r\n\tat ✽.Given esteja na tela tela Swagger(validacaoIdade.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -252,15 +253,13 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
-  "duration": 1566690800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
-  "duration": 558937100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 18,
@@ -313,15 +312,13 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "duration": 147834700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "duration": 376409000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -337,15 +334,13 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "duration": 957967400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "duration": 137061000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -359,4 +354,40 @@ formatter.match({
     }
   ],
   "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 42300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 115300,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "esteja na tela tela Swagger",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "MapfreCap API \"https://hmlsite.mapfrecap.com.br/WebMapfreCap/WebAPI/swagger/ui/index\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "validar que estou na pagina MapfreCap API",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
