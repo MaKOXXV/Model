@@ -11,8 +11,8 @@ pipeline{
 	    	steps{
 
 	    		withMaven(maven : 'maven_3_6_3'){
-	    			bat 'mvn clean install package -s settings.xml'
-				
+	    			//bat 'mvn clean install package -s settings.xml'
+				sh label: '', script: 'mvn clean install package -s settings.xml'
 	    		}
 	    	}
 	    }
@@ -25,7 +25,8 @@ pipeline{
 		}
 	    	steps{
 	    		withMaven(maven : 'maven_3_6_3'){
-	    			bat 'mvn test -s settings.xml'
+	    			//bat 'mvn test -s settings.xml'
+				sh label: '', script: 'mvn test -s settings.xml'
 	    		}
 	    	}
 	    }
