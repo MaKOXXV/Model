@@ -33,7 +33,7 @@ public class RunCuke{
 		File newFile = new File(fileName);
         //ExtentCucumberFormatter.initiateExtentCucumberFormatter(newFile,false);
 
-		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("ExtenReports/extentreports.html"),false);
+		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("target/ExtenReports/extentreports.html"),false);
         // Loads the extent config xml to customize on the report.
         ExtentCucumberFormatter.loadConfig(new File("src/test/resources/extent-config.xml"));
 
