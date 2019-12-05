@@ -1,7 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.regressive</groupId>
+<<<<<<< HEAD
   <artifactId>Patias</artifactId>
+=======
+  <artifactId>Model</artifactId>
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
   <version>0.0.1-SNAPSHOT</version>
   
 <properties>
@@ -11,6 +15,8 @@
 		<junit.version>4.12</junit.version>
 		<selenium.version>2.53.1</selenium.version>
 		<picocontainer.version>2.15</picocontainer.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+   		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<build>
@@ -19,8 +25,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${compiler.version}</version>
 				<configuration>
-					<source>3.5</source>
-					<target>3.5</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
@@ -90,6 +96,21 @@
 			<artifactId>selenium-server</artifactId>
 			<version>2.53.0</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+		<dependency>
+   			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-deploy-plugin</artifactId>
+    			<version>2.8</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+		<dependency>
+   			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-deploy-plugin</artifactId>
+    			<version>2.8</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>

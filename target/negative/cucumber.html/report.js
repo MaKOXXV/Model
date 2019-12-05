@@ -1,4 +1,82 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("validacaoIdade.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginWebMapfre.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Login tela Mapfre",
+  "description": "",
+  "id": "login-tela-mapfre",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@LoginWebMapfre"
+    }
+  ]
+});
+formatter.before({
+  "duration": 2309600,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Tela web mapfre",
+  "description": "",
+  "id": "login-tela-mapfre;tela-web-mapfre",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "esteja na tela web",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "senha",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "user",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "login",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "loginWebMapfre.esteja_na_tela_web()"
+});
+formatter.result({
+  "duration": 127302600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginWebMapfre.senha()"
+});
+formatter.result({
+  "duration": 33500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginWebMapfre.user()"
+});
+formatter.result({
+  "duration": 31200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginWebMapfre.login()"
+});
+formatter.result({
+  "duration": 31000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 27300,
+  "status": "passed"
+});
+formatter.uri("validacaoIdade.feature");
 formatter.feature({
   "line": 2,
   "name": "Validação de idade do usuario",
@@ -132,7 +210,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
+<<<<<<< HEAD
   "duration": 5460200,
+=======
+  "duration": 83100,
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
   "status": "passed"
 });
 formatter.background({
@@ -161,9 +243,14 @@ formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 19608098900,
   "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d78.0.3904.108)\n  (Driver info: chromedriver\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 17.28 seconds\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027mlemos10\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat pacot.Modulo.iniciacao(Modulo.java:21)\r\n\tat steps.ValidadacaoIdade.esteja_na_tela_tela_Swagger(ValidadacaoIdade.java:32)\r\n\tat ✽.Given esteja na tela tela Swagger(validacaoIdade.feature:5)\r\n",
   "status": "failed"
+=======
+  "duration": 15689305700,
+  "status": "passed"
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
 });
 formatter.match({
   "arguments": [
@@ -175,13 +262,23 @@ formatter.match({
   "location": "ValidadacaoIdade.mapfrecap_API(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "status": "skipped"
+=======
+  "duration": 3136848300,
+  "status": "passed"
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
 });
 formatter.match({
   "location": "ValidadacaoIdade.validar_que_estou_na_pagina_MapfreCap_API()"
 });
 formatter.result({
+<<<<<<< HEAD
   "status": "skipped"
+=======
+  "duration": 182167300,
+  "status": "passed"
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
 });
 formatter.scenario({
   "line": 18,
@@ -234,13 +331,15 @@ formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 907336400,
+  "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_pessoa_validarIdade()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 418048500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -256,13 +355,15 @@ formatter.match({
   "location": "ValidadacaoIdade.inserir_dados_com_a_data(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 657251700,
+  "status": "passed"
 });
 formatter.match({
   "location": "ValidadacaoIdade.clicar_em_Try_it_out()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 105182000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -277,6 +378,7 @@ formatter.match({
   ],
   "location": "ValidadacaoIdade.para_quem_nasceu_em(String,String)"
 });
+<<<<<<< HEAD
 formatter.result({
   "status": "skipped"
 });
@@ -313,3 +415,5 @@ formatter.step({
 formatter.match({
   "location": "ValidadacaoIdade.esteja_na_tela_tela_Swagger()"
 });
+=======
+>>>>>>> 4f4a177a0323a4f3c139b3b2b585ad126a55d3d9
