@@ -1,4 +1,4 @@
-package pacot;
+package factory;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,11 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
-public class Modulo {
+public class FactoryModule {
 	
 	static String driverPath = "src/test/";
 	WebDriver driver;
-	
 	
 	public  WebDriver iniciacao(){		
 		System.out.println("|---------> Instanciando Driver : ChromeDriver <------------|");
@@ -21,7 +20,6 @@ public class Modulo {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		
 		return driver;
 	}
 	

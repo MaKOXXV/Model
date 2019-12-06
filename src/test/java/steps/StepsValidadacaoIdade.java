@@ -6,20 +6,19 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import factory.FactoryModule;
+import pageObject.PageObjectValidacao;
 
-import pacot.Modulo;
-import metodo.HooksValidacao;
-
-public class ValidadacaoIdade {
-	
-	Modulo modulo = new Modulo();
-	HooksValidacao validate = new HooksValidacao();
-
+public class StepsValidadacaoIdade {
 	WebDriver driver;
+	
+	FactoryModule modulo = new FactoryModule();
+	PageObjectValidacao validate = new PageObjectValidacao(null);
 
 	@Before
 	public void setUp() {
-		
+		driver = modulo.iniciacao();
+		validate = new PageObjectValidacao(driver);
 	}
 
 	@After
@@ -29,49 +28,49 @@ public class ValidadacaoIdade {
 
 	@Given("^esteja na tela tela Swagger$")
 	public void esteja_na_tela_tela_Swagger() throws Throwable {		
-		driver = modulo.iniciacao();
+		System.out.println("Estagio inicial Instanciamento");
+		System.out.println("------------EXECUÇÂO DE TESTES-----------");
 		
 	}
 
 	@Given("^MapfreCap API \"([^\"]*)\"$")
 	public void mapfrecap_API(String url) throws Throwable {
-		//driver = modulo.iniciacao();
-		validate.host(url, driver);
+		validate.host(url);
 	}
 
 	@When("^validar que estou na pagina MapfreCap API$")
 	public void validar_que_estou_na_pagina_MapfreCap_API() throws Throwable {
-		validate.valide(driver);
+		validate.valide();
 	}
 
 	@When("^clicar em pessoa$")
 	public void clicar_em_pessoa() throws Throwable {
-		validate.pessoa(driver);
+		validate.pessoa();
 	}
 
 	@When("^clicar em pessoa/validarIdade$")
 	public void clicar_em_pessoa_validarIdade() throws Throwable {
-		validate.idade(driver);
+		validate.idade();
 	}
 
 	@When("^inserir dados com cpf \"([^\"]*)\" e \"([^\"]*)\"$")
 	public void inserir_dados_com_cpf(String cpf) throws InterruptedException{
-		validate.cpf(cpf, driver);
+		validate.cpf(cpf);
 	}
 
 	@When("^inserir dados com a data \"([^\"]*)\" e \"([^\"]*)\"$$")
 	public void inserir_dados_com_a_data(String data, String cpf) throws InterruptedException{
-		validate.date(data, cpf, driver);
+		validate.date(data, cpf);
 	}
 
 	@When("^clicar em Try it out$")
 	public void clicar_em_Try_it_out() throws Throwable {
-		validate.tryOut(driver);
+		validate.tryOut();
 	}
 
 	@Then("^\"([^\"]*)\" para quem nasceu em \"([^\"]*)\"$")
 	public void para_quem_nasceu_em(String result, String data) throws Throwable {
-		validate.result(result, data, driver);
+		validate.result(result, data);
 	}
 
 }

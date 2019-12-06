@@ -1,23 +1,30 @@
-package metodo;
+package pageObject;
 
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pacot.Modulo;
 
-public class HooksValidacao {
+import factory.FactoryModule;
+
+public class PageObjectValidacao {
 	
-	Modulo modulo = new Modulo(); 
+	FactoryModule modulo = new FactoryModule(); 
 	
-	public void host(String url, WebDriver driver) throws InterruptedException {				
+	WebDriver driver;
+	
+	public PageObjectValidacao(WebDriver driver) {				
+		this.driver = driver;
+	}
+	
+	public void host(String url) throws InterruptedException {				
 		System.out.println("Acessando URL : " + url);
 		driver.get(url);
 		
 	}
 	
-	public void valide(WebDriver driver) {
+	public void valide() {
 		String element = "//*[@id=\"logo\"]/span";
 		modulo.waitingElemnt(driver, element);
 		WebElement textoElement;
@@ -26,7 +33,7 @@ public class HooksValidacao {
 		modulo.highLight(textoElement, driver);	
 	}
 	
-	public void pessoa(WebDriver driver) {
+	public void pessoa() {
 		String elementStr = "//*[@id=\"resource_Pessoa\"]/div/h2/a";
 		modulo.waitingElemnt(driver, elementStr);
 		WebElement element = driver.findElement(By.xpath(elementStr));
@@ -35,7 +42,7 @@ public class HooksValidacao {
 		
 	}
 	
-	public void idade(WebDriver driver) throws InterruptedException {
+	public void idade() throws InterruptedException {
 		String elementStr = "//*[@id=\"Pessoa_Pessoa_ValidarMenor16Anos\"]/div[1]/h3/span[2]/a";
 		modulo.waitingElemnt(driver, elementStr);
 		WebElement element = driver.findElement(By.xpath(elementStr));
@@ -43,7 +50,7 @@ public class HooksValidacao {
 		element.click();
 	}
 	
-	public void cpf(String cpf, WebDriver driver) throws InterruptedException {
+	public void cpf(String cpf) throws InterruptedException {
 		System.out.println("incerindo cpf : " + cpf);
 		String value = null;
 		
@@ -54,7 +61,7 @@ public class HooksValidacao {
 		element.sendKeys(value);
 	}
 	
-	public void date(String data, String cpf, WebDriver driver) throws InterruptedException {
+	public void date(String data, String cpf) throws InterruptedException {
 		System.out.println("incerindo data : " + data);
 		String value = null;
 		String vant1 = "{\r\n" + 
@@ -101,7 +108,7 @@ public class HooksValidacao {
 		element.sendKeys(value);
 	}
 	
-	public void tryOut(WebDriver driver) throws InterruptedException {
+	public void tryOut() throws InterruptedException {
 		String elementStr = "//*[@id=\"Pessoa_Pessoa_ValidarMenor16Anos_content\"]/form/div[2]/input";
 		modulo.waitingElemnt(driver, elementStr);
 		WebElement element = driver.findElement(By.xpath(elementStr));
@@ -109,7 +116,7 @@ public class HooksValidacao {
 		element.click();
 	}
 	
-	public void result(String result, String data, WebDriver driver) throws InterruptedException {
+	public void result(String result, String data) throws InterruptedException {
 		String elementStr = "//*[@id='Pessoa_Pessoa_ValidarMenor16Anos_content']//div[@class='block response_code']/pre";
 		modulo.waitingElemnt(driver, elementStr);
 		

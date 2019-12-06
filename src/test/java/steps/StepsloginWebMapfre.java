@@ -7,7 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 
-public class loginWebMapfre {
+public class StepsloginWebMapfre {
 	
 	static String driverPath = "src/test/";
 	public WebDriver driver;
