@@ -131,7 +131,10 @@
 								</property>
 							</properties>
 							<includes>
-								<include>**/*Test.java</include>
+								   <include>**/Test*.java</include>
+    								   <include>**/*Test.java</include>
+							           <include>**/*Tests.java</include>
+							           <include>**/*TestCase.java</include>
 							</includes>
 							<parallel>classes</parallel>
 							<threadCountSuites>10</threadCountSuites>
