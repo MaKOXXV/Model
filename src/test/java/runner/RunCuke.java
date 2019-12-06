@@ -47,7 +47,7 @@ public class RunCuke{
 		File newFile = new File(fileName);
         ExtentCucumberFormatter.initiateExtentCucumberFormatter(newFile,false);
 
-		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("ExtenReports/extentreports"+ curDate +".html"),false);
+		ExtentCucumberFormatter.initiateExtentCucumberFormatter(new File("ExtenReports/extentreports.html"),false);
         //Extend em XML
         ExtentCucumberFormatter.loadConfig(new File("src/test/resources/extent-config.xml"));
 
